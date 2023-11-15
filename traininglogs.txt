@@ -1,0 +1,121 @@
+{'model_name': 'pythia-160m', 'name': 'redpajama', 'save_interval': 1000, 'eval_interval': 1000, 'eval_iters': 100, 'log_interval': 100, 'learning_rate': 0.006, 'batch_size': 32, 'micro_batch_size': 8, 'gradient_accumulation_steps': 4, 'max_iters': 15000, 'weight_decay': 0.1, 'beta1': 0.9, 'beta2': 0.95, 'grad_clip': 1.0, 'decay_lr': True, 'warmup_iters': 2000, 'lr_decay_iters': 15000, 'min_lr': 6e-06}
+Loading model with {'name': 'pythia-160m', 'hf_config': {'org': 'EleutherAI', 'name': 'pythia-160m-deduped'}, 'block_size': 2048, 'vocab_size': 50254, 'padding_multiple': 128, 'padded_vocab_size': 50304, 'n_layer': 12, 'n_head': 12, 'n_embd': 768, 'rotary_percentage': 0.25, 'parallel_residual': True, 'bias': True, 'lm_head_bias': False, 'n_query_groups': 12, 'shared_attention_norm': False, '_norm_class': 'LayerNorm', 'norm_eps': 1e-05, '_mlp_class': 'GptNeoxMLP', 'gelu_approximate': 'none', 'intermediate_size': 3072, 'rope_condense_ratio': 1, 'rope_base': 10000, 'head_size': 64, 'rope_n_elem': 16}
+Time to instantiate model: 0.28 seconds.
+Total parameters 162,322,944
+Estimated TFLOPs: 22.14
+Measured TFLOPs: 15.86
+iter 0 step 0: loss 11.0059, LR: 0.000000, iter time: 662.28ms
+iter 100 step 25: loss 7.5064, LR: 0.000300, iter time: 38.55ms
+iter 200 step 50: loss 6.8100, LR: 0.000600, iter time: 39.23ms
+iter 300 step 75: loss 6.1853, LR: 0.000900, iter time: 39.39ms
+iter 400 step 100: loss 6.0197, LR: 0.001200, iter time: 40.02ms
+iter 500 step 125: loss 5.8854, LR: 0.001500, iter time: 43.52ms
+iter 600 step 150: loss 5.5158, LR: 0.001800, iter time: 80.45ms
+iter 700 step 175: loss 5.7466, LR: 0.002100, iter time: 117.69ms
+iter 800 step 200: loss 5.4462, LR: 0.002400, iter time: 119.30ms
+iter 900 step 225: loss 5.3457, LR: 0.002700, iter time: 115.15ms
+iter 1000 step 250: loss 5.3444, LR: 0.003000, iter time: 116.98ms
+iter 1100 step 275: loss 5.1460, LR: 0.003300, iter time: 118.31ms
+iter 1200 step 300: loss 5.3354, LR: 0.003600, iter time: 126.11ms
+iter 1300 step 325: loss 5.1215, LR: 0.003900, iter time: 123.33ms
+iter 1400 step 350: loss 5.3447, LR: 0.004200, iter time: 118.56ms
+iter 1500 step 375: loss 5.1897, LR: 0.004500, iter time: 124.27ms
+iter 1600 step 400: loss 5.2543, LR: 0.004800, iter time: 123.56ms
+iter 1700 step 425: loss 4.7917, LR: 0.005100, iter time: 124.70ms
+iter 1800 step 450: loss 4.7591, LR: 0.005400, iter time: 123.93ms
+iter 1900 step 475: loss 5.0317, LR: 0.005700, iter time: 125.00ms
+iter 2000 step 500: loss 4.7684, LR: 0.006000, iter time: 124.17ms
+iter 2100 step 525: loss 4.6804, LR: 0.005999, iter time: 124.18ms
+iter 2200 step 550: loss 5.1235, LR: 0.005997, iter time: 124.49ms
+iter 2300 step 575: loss 4.7008, LR: 0.005992, iter time: 120.61ms
+iter 2400 step 600: loss 4.7170, LR: 0.005986, iter time: 96.21ms
+iter 2500 step 625: loss 4.5571, LR: 0.005978, iter time: 125.97ms
+iter 2600 step 650: loss 4.6210, LR: 0.005969, iter time: 125.82ms
+iter 2700 step 675: loss 4.5113, LR: 0.005957, iter time: 118.65ms
+iter 2800 step 700: loss 4.5060, LR: 0.005944, iter time: 119.83ms
+iter 2900 step 725: loss 4.3081, LR: 0.005929, iter time: 124.91ms
+iter 3000 step 750: loss 4.1304, LR: 0.005913, iter time: 123.00ms
+iter 3100 step 775: loss 4.5153, LR: 0.005895, iter time: 125.11ms
+iter 3200 step 800: loss 4.4473, LR: 0.005875, iter time: 118.63ms
+iter 3300 step 825: loss 4.4590, LR: 0.005853, iter time: 123.41ms
+iter 3400 step 850: loss 4.4132, LR: 0.005830, iter time: 125.91ms
+iter 3500 step 875: loss 4.0853, LR: 0.005805, iter time: 125.76ms
+iter 3600 step 900: loss 4.1677, LR: 0.005779, iter time: 118.46ms
+iter 3700 step 925: loss 4.0198, LR: 0.005751, iter time: 124.16ms
+iter 3800 step 950: loss 4.2300, LR: 0.005721, iter time: 123.48ms
+iter 3900 step 975: loss 4.2335, LR: 0.005690, iter time: 117.53ms
+Saving checkpoint to 'out/redpajama/iter-003999-ckpt.pth'
+iter 4000 step 1000: loss 4.1256, LR: 0.005657, iter time: 60.60ms
+iter 4100 step 1025: loss 3.7622, LR: 0.005622, iter time: 125.73ms
+iter 4200 step 1050: loss 4.1543, LR: 0.005586, iter time: 125.24ms
+iter 4300 step 1075: loss 4.2406, LR: 0.005549, iter time: 124.26ms
+iter 4400 step 1100: loss 3.7797, LR: 0.005510, iter time: 124.28ms
+iter 4500 step 1125: loss 4.2093, LR: 0.005469, iter time: 118.87ms
+iter 4600 step 1150: loss 3.8776, LR: 0.005428, iter time: 123.40ms
+iter 4700 step 1175: loss 3.4995, LR: 0.005384, iter time: 100.39ms
+iter 4800 step 1200: loss 4.1353, LR: 0.005340, iter time: 136.25ms
+iter 4900 step 1225: loss 4.0262, LR: 0.005294, iter time: 122.29ms
+iter 5000 step 1250: loss 4.2450, LR: 0.005246, iter time: 121.85ms
+iter 5100 step 1275: loss 4.0047, LR: 0.005198, iter time: 100.05ms
+iter 5200 step 1300: loss 3.9196, LR: 0.005148, iter time: 124.58ms
+iter 5300 step 1325: loss 4.0657, LR: 0.005096, iter time: 125.37ms
+iter 5400 step 1350: loss 4.3711, LR: 0.005044, iter time: 124.49ms
+iter 5500 step 1375: loss 3.6200, LR: 0.004990, iter time: 121.28ms
+iter 5600 step 1400: loss 2.9517, LR: 0.004936, iter time: 121.71ms
+iter 5700 step 1425: loss 3.6120, LR: 0.004880, iter time: 105.32ms
+iter 5800 step 1450: loss 3.4006, LR: 0.004823, iter time: 117.80ms
+iter 5900 step 1475: loss 3.5683, LR: 0.004765, iter time: 117.35ms
+iter 6000 step 1500: loss 4.0087, LR: 0.004705, iter time: 156.95ms
+iter 6100 step 1525: loss 3.5602, LR: 0.004645, iter time: 123.89ms
+iter 6200 step 1550: loss 4.1096, LR: 0.004584, iter time: 116.70ms
+iter 6300 step 1575: loss 3.8554, LR: 0.004522, iter time: 121.75ms
+iter 6400 step 1600: loss 3.4208, LR: 0.004459, iter time: 109.91ms
+iter 6500 step 1625: loss 3.6404, LR: 0.004396, iter time: 123.55ms
+iter 6600 step 1650: loss 3.7165, LR: 0.004331, iter time: 121.79ms
+iter 6700 step 1675: loss 3.5329, LR: 0.004266, iter time: 116.64ms
+iter 6800 step 1700: loss 4.0225, LR: 0.004200, iter time: 121.97ms
+iter 6900 step 1725: loss 3.5632, LR: 0.004133, iter time: 118.54ms
+iter 7000 step 1750: loss 3.9018, LR: 0.004066, iter time: 123.09ms
+iter 7100 step 1775: loss 3.4298, LR: 0.003998, iter time: 96.57ms
+iter 7200 step 1800: loss 3.0097, LR: 0.003929, iter time: 118.05ms
+iter 7300 step 1825: loss 3.8296, LR: 0.003860, iter time: 118.69ms
+iter 7400 step 1850: loss 3.6514, LR: 0.003790, iter time: 116.95ms
+iter 7500 step 1875: loss 3.5058, LR: 0.003720, iter time: 117.79ms
+iter 7600 step 1900: loss 3.3857, LR: 0.003650, iter time: 118.20ms
+iter 7700 step 1925: loss 3.4840, LR: 0.003579, iter time: 120.88ms
+iter 7800 step 1950: loss 3.6298, LR: 0.003508, iter time: 114.50ms
+iter 7900 step 1975: loss 3.6116, LR: 0.003436, iter time: 105.46ms
+Saving checkpoint to 'out/redpajama/iter-007999-ckpt.pth'
+iter 8000 step 2000: loss 3.9115, LR: 0.003364, iter time: 60.59ms
+iter 8100 step 2025: loss 3.7595, LR: 0.003292, iter time: 116.47ms
+iter 8200 step 2050: loss 2.7943, LR: 0.003220, iter time: 115.56ms
+iter 8300 step 2075: loss 3.7653, LR: 0.003148, iter time: 118.52ms
+iter 8400 step 2100: loss 3.5017, LR: 0.003075, iter time: 116.03ms
+iter 8500 step 2125: loss 3.8120, LR: 0.003003, iter time: 117.58ms
+iter 8600 step 2150: loss 3.1426, LR: 0.002931, iter time: 122.42ms
+iter 8700 step 2175: loss 3.5352, LR: 0.002858, iter time: 121.50ms
+iter 8800 step 2200: loss 2.7297, LR: 0.002786, iter time: 116.84ms
+iter 8900 step 2225: loss 3.5426, LR: 0.002714, iter time: 125.08ms
+iter 9000 step 2250: loss 3.4227, LR: 0.002642, iter time: 111.52ms
+iter 9100 step 2275: loss 3.7351, LR: 0.002570, iter time: 124.87ms
+iter 9200 step 2300: loss 3.8121, LR: 0.002498, iter time: 125.34ms
+iter 9300 step 2325: loss 3.5310, LR: 0.002427, iter time: 126.53ms
+iter 9400 step 2350: loss 3.2172, LR: 0.002356, iter time: 119.21ms
+iter 9500 step 2375: loss 3.4819, LR: 0.002286, iter time: 118.42ms
+iter 9600 step 2400: loss 3.1216, LR: 0.002216, iter time: 118.32ms
+iter 9700 step 2425: loss 3.8417, LR: 0.002146, iter time: 124.78ms
+iter 9800 step 2450: loss 3.0850, LR: 0.002077, iter time: 122.07ms
+iter 9900 step 2475: loss 3.5344, LR: 0.002008, iter time: 118.13ms
+iter 10000 step 2500: loss 3.2343, LR: 0.001940, iter time: 114.49ms
+iter 10100 step 2525: loss 3.8201, LR: 0.001873, iter time: 117.37ms
+iter 10200 step 2550: loss 3.4535, LR: 0.001806, iter time: 115.10ms
+iter 10300 step 2575: loss 3.6723, LR: 0.001740, iter time: 118.19ms
+iter 10400 step 2600: loss 2.9395, LR: 0.001675, iter time: 93.06ms
+iter 10500 step 2625: loss 3.7392, LR: 0.001610, iter time: 123.64ms
+iter 10600 step 2650: loss 3.0708, LR: 0.001547, iter time: 117.00ms
+iter 10700 step 2675: loss 3.2986, LR: 0.001484, iter time: 117.47ms
+iter 10800 step 2700: loss 3.5939, LR: 0.001422, iter time: 89.77ms
+iter 10900 step 2725: loss 3.4297, LR: 0.001361, iter time: 116.42ms
+Saving checkpoint to 'out/redpajama/iter-010915-ckpt.pth'
+Training time: 5066.80s
+Memory used: 21.58 GB
